@@ -28,13 +28,74 @@ ___CSS_LOADER_EXPORT___.push([module.id, `*, *::before, *::after{
 }
 
 body{
-  background-color: antiquewhite;
+  background: linear-gradient(to left,#FF8A08, #FFC100);
+  height: 100%;
+  overflow-x: hidden; /* Hide horizontal overflow */
+  overflow-y: auto; /* Allow vertical scrolling */
 }
 
-btn{
-  width: 15px;
-  height: 15px;
-}`, "",{"version":3,"sources":["webpack://./src/styles/main.css"],"names":[],"mappings":"AAAA;EACE,sBAAsB;EACtB,SAAS;EACT,UAAU;AACZ;;AAEA;EACE,8BAA8B;AAChC;;AAEA;EACE,WAAW;EACX,YAAY;AACd","sourcesContent":["*, *::before, *::after{\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0;\n}\n\nbody{\n  background-color: antiquewhite;\n}\n\nbtn{\n  width: 15px;\n  height: 15px;\n}"],"sourceRoot":""}]);
+/* Header section styling start */ 
+.btn{
+  min-width: 130px;
+  height: 40px;
+  color: black;
+  padding: 5px 10px;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 10px;
+  border: none;
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+  background: #ffd819;
+  margin: 10px;
+}
+.btn:hover {
+  background-color: #ffe566;
+}
+.btn:active {
+  top: 2px;
+}
+
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 10vh;
+  border-bottom: 2px solid #ffe566;
+}
+
+/* Header section sytling finished */ 
+/* Main section styling start */ 
+
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-section{
+  width: 50vw;
+  height: 100vh;
+  background: #ff9a3c; 
+  border-radius: 50px;
+  padding: 30px;
+  box-shadow: 0 2px 16px rgba(0,0,0,.1);
+}
+
+[data-tab-content] {
+  display: none;
+}
+
+.active[data-tab-content] {
+  display: block;
+}
+
+`, "",{"version":3,"sources":["webpack://./src/styles/main.css"],"names":[],"mappings":"AAAA;EACE,sBAAsB;EACtB,SAAS;EACT,UAAU;AACZ;;AAEA;EACE,qDAAqD;EACrD,YAAY;EACZ,kBAAkB,EAAE,6BAA6B;EACjD,gBAAgB,EAAE,6BAA6B;AACjD;;AAEA,iCAAiC;AACjC;EACE,gBAAgB;EAChB,YAAY;EACZ,YAAY;EACZ,iBAAiB;EACjB,mBAAmB;EACnB,eAAe;EACf,yBAAyB;EACzB,kBAAkB;EAClB,qBAAqB;EACrB,aAAa;EACb,mBAAmB;EACnB,YAAY;EACZ,sHAAsH;EACtH,mBAAmB;EACnB,YAAY;AACd;AACA;EACE,yBAAyB;AAC3B;AACA;EACE,QAAQ;AACV;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,6BAA6B;EAC7B,mBAAmB;EACnB,YAAY;EACZ,gCAAgC;AAClC;;AAEA,oCAAoC;AACpC,+BAA+B;;AAE/B;EACE,aAAa;EACb,mBAAmB;EACnB,uBAAuB;EACvB,mBAAmB;AACrB;;AAEA;EACE,WAAW;EACX,aAAa;EACb,mBAAmB;EACnB,mBAAmB;EACnB,aAAa;EACb,qCAAqC;AACvC;;AAEA;EACE,aAAa;AACf;;AAEA;EACE,cAAc;AAChB","sourcesContent":["*, *::before, *::after{\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0;\n}\n\nbody{\n  background: linear-gradient(to left,#FF8A08, #FFC100);\n  height: 100%;\n  overflow-x: hidden; /* Hide horizontal overflow */\n  overflow-y: auto; /* Allow vertical scrolling */\n}\n\n/* Header section styling start */ \n.btn{\n  min-width: 130px;\n  height: 40px;\n  color: black;\n  padding: 5px 10px;\n  font-weight: bolder;\n  cursor: pointer;\n  transition: all 0.3s ease;\n  position: relative;\n  display: inline-block;\n  outline: none;\n  border-radius: 10px;\n  border: none;\n  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);\n  background: #ffd819;\n  margin: 10px;\n}\n.btn:hover {\n  background-color: #ffe566;\n}\n.btn:active {\n  top: 2px;\n}\n\nnav{\n  display: flex;\n  flex-direction: row;\n  justify-content: space-around;\n  align-items: center;\n  height: 10vh;\n  border-bottom: 2px solid #ffe566;\n}\n\n/* Header section sytling finished */ \n/* Main section styling start */ \n\n.container{\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n  align-items: center;\n}\n\n.main-section{\n  width: 50vw;\n  height: 100vh;\n  background: #ff9a3c; \n  border-radius: 50px;\n  padding: 30px;\n  box-shadow: 0 2px 16px rgba(0,0,0,.1);\n}\n\n[data-tab-content] {\n  display: none;\n}\n\n.active[data-tab-content] {\n  display: block;\n}\n\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -477,6 +538,16 @@ function styleTagTransform(css, styleElement) {
 }
 module.exports = styleTagTransform;
 
+/***/ }),
+
+/***/ "./src/assets/logo.png":
+/*!*****************************!*\
+  !*** ./src/assets/logo.png ***!
+  \*****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "logo.png";
+
 /***/ })
 
 /******/ 	});
@@ -530,6 +601,18 @@ module.exports = styleTagTransform;
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -546,6 +629,29 @@ module.exports = styleTagTransform;
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src;
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) {
+/******/ 					var i = scripts.length - 1;
+/******/ 					while (i > -1 && (!scriptUrl || !/^http(s?):/.test(scriptUrl))) scriptUrl = scripts[i--].src;
+/******/ 				}
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/nonce */
 /******/ 	(() => {
 /******/ 		__webpack_require__.nc = undefined;
@@ -560,9 +666,38 @@ var __webpack_exports__ = {};
   \**********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_main_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/main.css */ "./src/styles/main.css");
+/* harmony import */ var _assets_logo_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/logo.png */ "./src/assets/logo.png");
+
+
+
+const tabs = document.querySelectorAll('[data-tab-target]');
+const tabContents = document.querySelectorAll('[data-tab-content]');
+
+document.addEventListener("DOMContentLoaded", function() {
+    const homeTabButton = document.getElementById("home");
+    const homeTabContent = document.querySelector(".home");
+  
+    homeTabButton.classList.add('active');
+    homeTabContent.classList.add('active');
+  });
+
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    const target = document.querySelector(tab.dataset.tabTarget);
+    tabContents.forEach(tabContent => {
+      tabContent.classList.remove('active');
+    });
+    tabs.forEach(tab => {
+      tab.classList.remove('active');
+    });
+    tab.classList.add('active');
+    target.classList.add('active');
+  });
+});
+
 
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=bundlead638c69deb4ebcc43ac.js.map
+//# sourceMappingURL=bundle53554d22464be436e2e2.js.map

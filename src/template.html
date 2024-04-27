@@ -8,10 +8,69 @@
 <body>
   <header>
     <nav>
-      <button id="home" class="btn">Home</button>
-      <button id="menu" class="btn">Menu</button>
-      <button id="about" class="btn">About Us</button>
+      <div id="logo">
+        <img src="./assets/logo.png" alt="Logo">
+      </div>
+      <div class="nav-section">
+        <button id="home" class="btn active" data-tab-target=".home">Home</button>
+        <button id="menu" class="btn" data-tab-target=".menu">Menu</button>
+        <button id="about" class="btn" data-tab-target=".about">About Us</button>
+      </div>
     </nav>
   </header>
+  <main class="container">
+    <div class="main-section">
+      <div class="home" data-tab-content class="active">
+        <h2>Welcome to The Nook!</h2>
+        <p>Nestled in the heart of the neighborhood, The Nook is your go-to spot for delicious, heartwarming meals served with a dash of home-cooked goodness. At The Nook, we believe that food is more than just sustenance; it's a reason to gather, to celebrate, and to create memories around the table.</p>
+        <p>Join us for a meal, grab a seat on our sunny patio or cozy up in one of our comfy booths. Whether you’re looking to start your day with a robust breakfast, enjoy a leisurely lunch, or indulge in a peaceful dinner, The Nook promises not just a meal, but an experience.</p>
+        <p>Don't forget to check out our daily specials and homemade desserts to round off your dining experience. At The Nook, every meal is made special, and every visitor is treated like family.</p>
+        <p>We can't wait to welcome you!</p>
+        <p>Visit us today and find your spot at The Nook – where every meal feels like coming home.</p>
+    </div>
+    
+    <div class="about" data-tab-content>
+        <h2>About The Nook</h2>
+        <p>The Nook is a cozy neighborhood eatery dedicated to serving delicious, heartwarming meals with a touch of home-cooked goodness. Our menu is inspired by classic comfort dishes crafted with locally sourced ingredients, designed to evoke a sense of nostalgia while surprising you with modern twists.</p>
+        <p>At The Nook, we believe in the power of food to bring people together. Whether you're joining us for breakfast, lunch, or dinner, we promise to provide not just a meal, but an experience that nourishes both body and soul.</p>
+        <p>Our friendly staff is here to ensure that every visit to The Nook is memorable. We treat every guest like family, and we can't wait to welcome you to your new favorite spot in the neighborhood!</p>
+    </div>
+    
+    <div class="menu" data-tab-content>
+        <h2>Our Menu</h2>
+        
+        <h3>Starters</h3>
+        <ul>
+            <li>Creamy Tomato Basil Soup - A velvety tomato soup topped with a swirl of fresh cream and served with a side of garlic croutons. ($6)</li>
+            <li>Nook's Seasonal Salad - Mixed greens, fresh seasonal fruits, goat cheese, and toasted nuts, drizzled with our homemade honey-balsamic vinaigrette. ($8)</li>
+        </ul>
+        
+        <h3>Main Courses</h3>
+        <ul>
+            <li>The Nook Grilled Cheese - Gourmet grilled cheese with a blend of cheddar, mozzarella, and gouda on artisan bread, grilled to perfection. Add bacon or tomato for $1. ($9)</li>
+            <li>Homestyle Meatloaf - A slice of hearty meatloaf made with ground beef and pork, glazed with a sweet and tangy sauce, served with mashed potatoes and steamed vegetables. ($12)</li>
+        </ul>
+        
+        <h3>Desserts</h3>
+        <ul>
+            <li>Apple Crisp a la Mode - Warm spiced apple crisp topped with vanilla ice cream and caramel sauce. ($5)</li>
+            <li>Chocolate Lava Cake - Moist chocolate cake with a gooey chocolate center, served with whipped cream. ($6)</li>
+            <li>Homemade Cheesecake - Rich and creamy cheesecake on a graham cracker crust, topped with a berry compote. ($5)</li>
+        </ul>
+        
+        <h3>Beverages</h3>
+        <ul>
+            <li>Fresh Brewed Coffee - Locally sourced beans brewed into the perfect cup of coffee. ($2)</li>
+            <li>Iced Mint Tea - Refreshingly sweet tea infused with mint leaves. ($3)</li>
+            <li>Craft Sodas - Choose from our selection of locally produced sodas. Flavors: Root Beer, Black Cherry, Cream Soda. ($3)</li>
+        </ul>
+        
+        <p>*All prices are in USD.</p>
+        
+        <h3>Daily Specials</h3>
+        <p>Be sure to ask your server about our daily specials and soup of the day!</p>
+    </div>    
+    </div>
+  </main>
 </body>
 </html>
